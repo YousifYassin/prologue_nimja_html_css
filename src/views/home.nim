@@ -1,9 +1,11 @@
 import nimja/parser
 import prologue
 
-proc home_page(ctx: Context) {.async.} =
+proc home_page*(ctx: Context) {.async.} =
   proc render_home(): string =
-    let name = "Raiden"
+    let
+      name = "Raiden"
+      language = "Nim"
     try:
       compileTemplateFile(path = "../templates/index.html", baseDir = getScriptDir())
     except KeyError:

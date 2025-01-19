@@ -1,5 +1,5 @@
 import prologue
-import views/home.nim
+include views/home
 
 when isMainModule:
   let settings = newSettings(port = Port(3000), debug = true)

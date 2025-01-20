@@ -5,12 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta name="keywords" content="Heading, Paragraph, Typography">
+  <title>Headings, Paragraph, Typography</title>
 </head>
 
 <body>
-  <!--This is comment-->
-  <p>This is just template</p>
+  <!--Headings-->
+  {% for num in numbers %}
+  <h{{num}}> Header{{num}} </h{{num}}>
+  {% endfor %}
+
+  <!--Paragraph, tags [strong, em, br, hr, del, u]-->
+  <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing elit</em>. Ut mollis posuere tincidunt. Proin faucibus porta
+    bibendum. Nam laoreet congue sapien et sodales. Morbi posuere <strong> elit et ante dictum varius</strong>. Nam in
+    laoreet quam.
+    <!-- This is break-->
+    <br>
+    <br>
+    Integer sit amet tellus lorem. Fusce ultricies nisi lorem, eget ornare risus lacinia ut. Donec urna quam, interdum
+    eu rhoncus vitae, imperdiet sed justo. Vivamus porttitor sit amet eros suscipit pretium. Duis tristique rutrum
+    sollicitudin.
+    <!--Horizontal rule-->
+    <hr>
+    Maecenas blandit ante neque, at pharetra justo pellentesque sed. Praesent ultricies nisi at velit
+    iaculis commodo. Nunc nec ante luctus velit pellentesque aliquet id quis sapien. Aliquam sed est luctus, porta nunc
+    eget, accumsan justo. Nunc neque lacus, <u>tempus ac pellentesque non</u>, <del>pharetra facilisis lorem</del>.
+  </p>
 </body>
 
 </html>

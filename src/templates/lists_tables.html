@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="List, Tables">
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <!-- style in square we can also use none-->
+  <ul style="list-style: square">
+    {% for num in numbers %}
+    <li>Item{{num}}</li>
+    {% endfor %}
+  </ul>
+  <!-- This is the default style -->
+  <ul style="list-style: disc">
+    {% for num in numbers %}
+    <li>Item{{num}}</li>
+    {% endfor %}
+  </ul>
+  <!-- style in circle -->
+  <ul style="list-style: circle">
+    {% for num in numbers %}
+    <li>Item{{num}}</li>
+    {% endfor %}
+  </ul>
+
+  <!-- unorder list -->
+  <!-- This is the default -->
+  <ol type="1">
+    {% for num in numbers %}
+    <li>Item{{num}}</li>
+    {% endfor %}
+  </ol>
+  <!-- This is for use A - Z and we can use a - z -->
+  <ol type="A">
+    {% for num in numbers %}
+    <li>Item{{num}}</li>
+    {% endfor %}
+  </ol>
+  <!-- another order type I, II, III -->
+  <ol type="I">
+    {% for num in numbers %}
+    <li>Item{{num}}</li>
+    {% endfor %}
+  </ol>
+  <!-- Nested list -->
+  <ul style="list-style: circle;">
+    <li> items 1 </li>
+    <li> items 2 </li>
+    <ol type="i">
+      <li> data 1 </li>
+      <li> data 2 </li>
+    </ol>
+    <li> items 3 </li>
+  </ul>
+
+  <!-- Tables with some style -->
+  <table style="width: 600px;">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Raiden</td>
+        <td>Dozer</td>
+        <td>snipermanXP@msn.com</td>
+      </tr>
+      <tr>
+        <td>ahmed</td>
+        <td>yahya</td>
+        <td>ahmedyahya.gmail.com</td>
+      </tr>
+      <tr>
+        <td>Jone</td>
+        <td>Don</td>
+        <td>JoneDone@yahoo.com</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

@@ -12,5 +12,6 @@ when isMainModule:
   app.addRoute("/typography", typography_page)
   app.addRoute("/links_images", link_images_page)
   app.addRoute("/lists_tables", list_table, HttpGet)
-  app.addRoute("/forms", form)
+  app.addRoute("/forms", form, HttpGet)
+  app.addRoute("/forms", form, HttpPost)
   app.run()

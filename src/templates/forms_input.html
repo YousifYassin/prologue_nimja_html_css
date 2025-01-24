@@ -11,31 +11,62 @@
 
 <body>
   <form action="/forms" method="post">
+    <!-- Text -->
     <div>
       <label for="name">Name</label><br>
-      <input id="name" type="text" name="person_name">
+      <input id="name" type="text" name="person_name" placeholder="Dozer">
     </div>
+    <!-- Email -->
     <div>
       <label for="email">Email</label><br>
-      <input id="email" type="email" name="person_email">
+      <input id="email" type="email" name="person_email" placeholder="example@gmail.com">
     </div>
+    <!-- Textarea -->
     <div>
       <lable for="message">Message</lable><br>
-      <textarea id="message" name="person_message" cols="50" rows="15"></textarea>
+      <textarea id="message" name="person_message" cols="50" rows="15"
+        placeholder="Insert your message here ..."></textarea>
     </div>
+    <!-- Select -->
     <div>
       <label for="gender">Gender</label>
       <select id="gender" name="person_gender">
-        <option value="Male">Male</option>
+        <option selected value="Male">Male</option>
         <option value="Female">Female</option>
       </select>
     </div>
+    <!-- Number -->
     <div>
       <label for="age">Age</label>
-      <input id="age" type="number" name="person_age" </div>
-      <div>
-        <input id="submit" type="submit">
-      </div>
+      <input id="age" type="number" name="person_age" placeholder="18">
+    </div>
+    <!-- Data -->
+    <div>
+      <lable for="brithdate">Brithdate</lable><br>
+      <input id="brithdate" type="date" name="person_brithdate">
+    </div>
+    <!-- Radio Button -->
+    <div>
+      <label for="membership">Membership</label><br>
+      <input id="membership" type="radio" name="person_membership" value="simple">Simple
+      <input id="membership" type="radio" name="person_membership" value="standard" checked>Standard
+      <input id="membership" type="radio" name="person_membership" value="super">Super
+    </div>
+    <!-- Checkbox -->
+    <div>
+      <label for="like">I Like ...</label><br>
+      <input id="like" type="checkbox" value="Bike" name="person_like1">Bike
+      <input id="like" type="checkbox" value="Car" name="person_like2">Car
+      <input id="like" type="checkbox" value="Boat" name="person_like3">Boat
+    </div>
+    <!-- Input Submit -->
+    <div>
+      <input id="submit" type="submit" value="Submit">
+    </div>
+    <!-- This is another way to submit the form -->
+    <div>
+      <button type="submit">Submit</button>
+    </div>
   </form>
 </body>
 

@@ -1,6 +1,6 @@
 import prologue
 import prologue/middlewares/staticfile
-import views/[home, basic_layout, meta, typography, link_images, list, forms_input]
+import views/[home, basic_layout, meta, typography, link_images, list, forms_input, inline_block]
 
 when isMainModule:
   let
@@ -14,4 +14,5 @@ when isMainModule:
   app.addRoute("/lists_tables", list_table, HttpGet)
   app.addRoute("/forms", form, HttpGet)
   app.addRoute("/forms", form, HttpPost)
+  app.addRoute("/inline_block", inlines_blocks, HttpGet)
   app.run()

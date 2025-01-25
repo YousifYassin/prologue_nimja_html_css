@@ -1,11 +1,12 @@
 import prologue
 import prologue/middlewares/staticfile
-import views/[home, basic_layout, meta, typography, link_images, list, forms_input, inline_block]
+import views/[home, basic_layout, meta, typography, link_images, list, forms_input, inline_block, id_classes]
 
 when isMainModule:
   let
     settings = newSettings(port = Port(3000), debug = true)
     app = (var the_app = newApp(settings); the_app.use(staticFileMiddleware("img")); the_app)
+
   app.addRoute("/", home_page)
   app.addRoute("/basic", basic)
   app.addRoute("/meta", meta_page)
@@ -15,4 +16,5 @@ when isMainModule:
   app.addRoute("/forms", form, HttpGet)
   app.addRoute("/forms", form, HttpPost)
   app.addRoute("/inline_block", inlines_blocks, HttpGet)
+  app.addRoute("/id_class", class_id_fn, HttpGet)
   app.run()

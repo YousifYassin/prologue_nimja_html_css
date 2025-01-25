@@ -1,6 +1,6 @@
 import prologue
 import prologue/middlewares/staticfile
-import views/[home, basic_layout, meta, typography, link_images, list, forms_input, inline_block, id_classes, entities]
+import views/[home, basic_layout, meta, typography, link_images, list, forms_input, inline_block, id_classes, entities, html5_semantics]
 
 when isMainModule:
   let
@@ -20,4 +20,6 @@ when isMainModule:
   app.addRoute("/id_class.html", class_id_fn, HttpGet)
   app.addRoute("/entities", entities_fn, HttpGet)
   app.addRoute("/entities.html", entities_fn, HttpGet)
+  app.addRoute("/semantics", semantics_fn, HttpGet)
+  app.addRoute("/semantics.html", semantics_fn, HttpGet)
   app.run()

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="CSS">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <title>{{title}}</title>
+  <style>
+    /* Internal CSS */
+    h2 {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Inline CSS -->
+  <section id="inline_section">
+    {% for (idx, number) in numbers.pairs() %}
+    {% if number == "One" %}
+    {% var number = "oNe" %}
+    <h{{idx + 1}} style="color: red;">Heading {{number}}</h{{idx + 1}}>
+    {% else %}
+    <h{{idx + 1}}>Heading {{number}}</h{{idx + 1}}>
+    {% endif %}
+    {% endfor %}
+  </section>
+</body>
+
+</html>

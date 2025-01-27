@@ -1,0 +1,32 @@
+/* Element Selector */
+body {
+  background-color: #333;
+}
+
+#about {
+  color: white;
+}
+
+/* . is for classes */
+.welcome-header {
+  color: green;
+}
+
+/* # is for id */
+#welcome {
+  background-color: #f4f4f4;
+}
+
+/* multiple selector */
+#welcome,
+#about {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* nested selector */
+#about p {
+  /* 16 is the default font size */
+  font-size: 20px;
+}

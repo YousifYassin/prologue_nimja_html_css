@@ -1,3 +1,14 @@
-p {
-  color: #ff0000;
+/* Color Name */
+body #para1 {
+  color: red;
+}
+
+/* RGB */
+body #para2 {
+  color: rgb(0, 255, 0);
+}
+
+/* HEX */
+body #para3 {
+  color: #0000ff;
 }

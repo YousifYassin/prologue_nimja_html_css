@@ -10,8 +10,17 @@
 </head>
 
 <body>
-  <!--This is comment-->
-  <p>This is just template</p>
+  {% var num = "" %}
+  {% for number in numbers %}
+  {% if number == 1 %}
+  {% num = "One" %}
+  {% elif number == 2 %}
+  {% num = "Two" %}
+  {% else %}
+  {% num = "Three" %}
+  {% endif %}
+  <p id="para{{number}}"> Heading {{num}} </p>
+  {% endfor %}
 </body>
 
 </html>

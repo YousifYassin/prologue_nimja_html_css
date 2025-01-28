@@ -1,5 +1,33 @@
-body {
+#box-1 {
+  background-color: blanchedalmond;
+  /* border-width: 3px; */
+  /* border-color: red; */
+  /* border-style: solid; */
+  border-radius: 10px;
+  border: 3px red solid
+}
+
+#box-2 {
   background-color: #333;
   color: #f4f4f4;
-  font-family: Arial, Helvetica, sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 3px #f4f4f4 solid;
+}
+
+#box-3 {
+  /* background-image: url(/src/imgs/wood.jpg); */
+  /* background-repeat: on-repeat; */
+  /* background-position: 100px 100px; */
+  /* background-position: center center; */
+  /* background-size: cover; */
+  background: url(/src/imgs/wood.jpg) no-repeat center center/cover;
+  color: #fff;
+  height: 300px;
+  width: 600px;
+}
+
+#box-4 {
+  background: url(/src/imgs/north.png) no-repeat center center;
+  background-attachment: fixed;
 }

@@ -2,7 +2,7 @@ import prologue
 import prologue/middlewares/staticfile
 import views/[home, basic_layout, meta, typography, link_images, list,
     forms_input, inline_block, id_classes, entities, html5_semantics]
-import css_views/[css_basic, selectors, fonts, colors]
+import css_views/[css_basic, selectors, fonts, colors, border_background]
 
 when isMainModule:
   let
@@ -36,5 +36,7 @@ when isMainModule:
     app.addRoute("/fonts.html", fonts_fn, HttpGet)
     app.addRoute("/colors", colors_fn, HttpGet)
     app.addRoute("/colors.html", colors_fn, HttpGet)
+    app.addRoute("/border", border_bg_fn, HttpGet)
+    app.addRoute("/border.html", border_bg_fn, HttpGet)
 
   app.run()

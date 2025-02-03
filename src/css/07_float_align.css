@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.clr {
+  clear: both;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+
+.container {
+  /* This is to make text responsive */
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.box {
+  background-color: #f4f4f4;
+  border-width: 1px;
+  border-color: #333;
+  border-style: solid;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.box p {
+  text-align: left;
+  text-align: right;
+  text-align: center;
+  text-align: justify;
+}
+
+.box h3 {
+  text-align: center;
+}
+
+#box-2 {
+  float: left;
+  width: 69%;
+}
+
+#box-3 {
+  float: right;
+  width: 30%;
+}

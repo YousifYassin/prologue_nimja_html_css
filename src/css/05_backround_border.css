@@ -8,6 +8,7 @@
 }
 
 #box-2 {
+  background-position: 0px 100px;
   background-color: #333;
   color: #f4f4f4;
   border-top-left-radius: 10px;

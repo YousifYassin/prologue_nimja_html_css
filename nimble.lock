@@ -1,0 +1,130 @@
+{
+  "version": 2,
+  "packages": {
+    "cligen": {
+      "version": "1.7.8",
+      "vcsRevision": "e274362fc12dff368aeacd982112385f59fc8c49",
+      "url": "https://github.com/c-blake/cligen.git",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "1261a00456f7837bd34eefa24f4f13c0fc9a6545"
+      }
+    },
+    "cookiejar": {
+      "version": "0.3.0",
+      "vcsRevision": "aa96ca83a7c154f08803c7715f054d77f2d623cf",
+      "url": "https://github.com/planety/cookiejar",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "41001886ccf9670f67bc511ae48ea07e7c95c25b"
+      }
+    },
+    "wepoll": {
+      "version": "0.1.2",
+      "vcsRevision": "07fb549ecf656f9aab957b78fb0d1e2d2e47a76f",
+      "url": "https://github.com/ringabout/wepoll",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "7c9818403ac159af1b3eced3f5d286e1f9c477d5"
+      }
+    },
+    "ioselectors": {
+      "version": "0.2.0",
+      "vcsRevision": "c9344036936a49db3ff1bce97e0896d6aabcf22d",
+      "url": "https://github.com/ringabout/ioselectors",
+      "downloadMethod": "git",
+      "dependencies": [
+        "wepoll"
+      ],
+      "checksums": {
+        "sha1": "c6ab3f5cabc4a40f6cbeeb6701be0f3c6c23f6b1"
+      }
+    },
+    "httpx": {
+      "version": "0.3.8",
+      "vcsRevision": "47cb5e79c6070153240f7395134885a114b0f039",
+      "url": "https://github.com/ringabout/httpx",
+      "downloadMethod": "git",
+      "dependencies": [
+        "ioselectors"
+      ],
+      "checksums": {
+        "sha1": "31ef637d4136a2c7deebce51c02c27145692d4f5"
+      }
+    },
+    "logue": {
+      "version": "0.2.4",
+      "vcsRevision": "fdad43b69bc4517a3595d1a28e86161e8cfca614",
+      "url": "https://github.com/planety/logue",
+      "downloadMethod": "git",
+      "dependencies": [
+        "cligen"
+      ],
+      "checksums": {
+        "sha1": "05b38d9fadb06c1cd7b25d9e18e39d443b799093"
+      }
+    },
+    "nimcrypto": {
+      "version": "0.6.0",
+      "vcsRevision": "71bca15508e2c0548f32b42a69bcfb1ccd9ab9ff",
+      "url": "https://github.com/cheatfate/nimcrypto",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5c65396428df9112a15a9e58f0b1a6156dca1b35"
+      }
+    },
+    "nimja": {
+      "version": "0.10.0",
+      "vcsRevision": "b7a25c62e63b459b9bfbef1de05199e4837c67d0",
+      "url": "https://github.com/enthus1ast/nimja",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "576ef188851cb3d61547d8e69b6dce5495e17863"
+      }
+    },
+    "unicodedb": {
+      "version": "0.13.0",
+      "vcsRevision": "15c5e25e2a49a924bc97647481ff50125bba2c76",
+      "url": "https://github.com/nitely/nim-unicodedb",
+      "downloadMethod": "git",
+      "dependencies": [],
+      "checksums": {
+        "sha1": "5c5fc0c8a83d270aca74fe41d33158e9042bb91a"
+      }
+    },
+    "regex": {
+      "version": "0.26.0",
+      "vcsRevision": "09c5d12f49763eacff0c337d8832c05a3348e6d6",
+      "url": "https://github.com/nitely/nim-regex",
+      "downloadMethod": "git",
+      "dependencies": [
+        "unicodedb"
+      ],
+      "checksums": {
+        "sha1": "038733eb4a3fc435afb6b038dca04ebeae7aad7d"
+      }
+    },
+    "prologue": {
+      "version": "0.6.6",
+      "vcsRevision": "81c8c1d7c7f4947c28eeeac55648f6edd1be37f1",
+      "url": "https://github.com/planety/Prologue",
+      "downloadMethod": "git",
+      "dependencies": [
+        "regex",
+        "nimcrypto",
+        "cookiejar",
+        "httpx",
+        "logue"
+      ],
+      "checksums": {
+        "sha1": "433777a19c0bf630753006f0646c5a6dbbfd4b74"
+      }
+    }
+  },
+  "tasks": {}
+}
